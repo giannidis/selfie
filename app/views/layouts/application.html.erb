@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SelfieGram</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/nav' %>
+
+<header>
+	<div class="row text-center">
+		<div class="col-md-12">
+			<h2>Κάνε τα μηνύματα σου ξεχωριστά</h2>
+		</div>
+	</div>
+</header>
+
+<div class="container-fluid main">
+	<%= yield %>
+</div>	
+
+<%= render 'layouts/footer' %>
+
+</body>
+</html>

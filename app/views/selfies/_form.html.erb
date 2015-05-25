@@ -1,0 +1,23 @@
+<%= simple_form_for @selfie, html: { multipart: true } do |f| %>
+  <% if @selfie.errors.any? %>
+    <div id="errors">
+      <p>
+        <%= @selfie.errors.count %>
+        Prevented from submitting
+      </p>
+      <ul>
+        <% @selfie.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="panel-body">
+    <%= f.input :message, input_html: { class: 'form-control' } %>
+    <%= f.input :email_custom, input_html: { class: 'form-control' } %>
+  </div>
+  <div id="dropin"></div>
+  <%= f.button :submit, class: "btn btn-red" %>
+<% end %>
