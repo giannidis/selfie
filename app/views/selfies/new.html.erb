@@ -1,5 +1,55 @@
 <!-- <h1>Just like Uber - but for models</h1> -->
-<section id="services">
+<section class="features-list" id="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="col-md-4 feature-1 wp2">
+					<div class="feature-icon">
+						<i class="fa fa-comment"></i>
+					</div>
+					<div class="feature-content">
+						<h1>Αποστολή Μηνύματος</h1>
+						<p>Στειλε μας το μηνυμα και το φυλλο στο οποιο θελεις να στειλεις την εικονα</p>
+					</div>
+				</div>
+				<div class="col-md-4 feature-2 wp2 delay-05s">
+					<div class="feature-icon">
+						<i class="fa fa-camera"></i>
+					</div>
+					<div class="feature-content">
+						<h1>Φωτογραφια μηνυματος</h1>
+						<p>Ενα απο τα μοντελα μας θα ετοιμασει την φωτογραφια σου</p>
+					</div>
+				</div>
+				<div class="col-md-4 feature-3 wp2 delay-1s">
+					<div class="feature-icon">
+						<i class="fa fa-send"></i>
+					</div>
+					<div class="feature-content">
+						<h1>Παραλαβή φωτογραφίας</h1>
+						<p>Εντος μιας ωρας θα παραλαβεις την εικονα στο Email που μας εστειλες</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="video" id="about">
+	<div class="opacity">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1><a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-play-circle-o"></i> Watch the Video</a></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- <section id="services">
 	<div class="row text-center">
 		<h2>Πως λειτουργει</h2><br>
 		<div class="col-md-4">
@@ -18,14 +68,7 @@
 		    <p class="text-muted">Εντος μιας ωρας θα παραλαβεις την εικονα στο Email που μας εστειλες</p>
 		</div>	
 	</div>
-</section>
-
-<section id="video">
-		<div class="row text-center">
-			<!-- <%= image_tag("img.jpg", class: "img-responsive") %> -->
-			<i class="fa fa-play fa-5x"></i>
-		</div>
-</section>
+</section> -->
 
 <section id="plans">
 	<div class="row">
@@ -34,8 +77,14 @@
 
 			  <!-- Nav tabs -->
 			  <ul class="nav nav-tabs" role="tablist">
-			    <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Personal</a></li>
-			    <li role="presentation"><a href="#business" aria-controls="business" role="tab" data-toggle="tab">Pro</a></li>
+			    <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Personal
+			    	<div class="price">
+                		5<sup>90</sup><span> <i class="fa fa-euro"></i></span>
+              		</div></a>
+              	</li>
+			    <li class="disabled " role="presentation"><a href="#pro" aria-controls="pro" role="tab" data-toggle="">Pro
+					<p class="text-muted">Coming Soon</p>
+			    </a></li>
 			  </ul>
 
 			  <!-- Tab panes -->
@@ -44,7 +93,7 @@
 			    	<p>Enter your message<br>Get a hi-res photo</p>
 			    	<%= render 'form' %>
 			    </div>
-			    <div role="tabpanel" class="tab-pane" id="business">Comming Soon</div>
+			    <div role="tabpanel" class="tab-pane" id="pro">Comming Soon</div>
 			  </div>
 
 			</div>
@@ -52,30 +101,136 @@
 	</div>
 </section>
 
-<section id="models">
-	<div class="row text-center">
-		<h1>Models</h1><br>
-		<div class="col-md-3">
-			<%= image_tag("img4.jpg", class: "img-responsive thumbnail") %>
+<section class="screenshots" id="screenshots">
+	<div class="container-fluid">
+		<div class="row">
+			<ul class="grid">
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
 		</div>
-		<div class="col-md-3">
-			<%= image_tag("img4.jpg", class: "img-responsive thumbnail") %>
-		</div>
-		<div class="col-md-3">
-			<%= image_tag("img4.jpg", class: "img-responsive thumbnail") %>
-		</div>
-		<div class="col-md-3">
-			<%= image_tag("img4.jpg", class: "img-responsive thumbnail") %>
+		<div class="row">
+			<ul class="grid">
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+					<%= image_tag("img4.jpg", class: "img-responsive", alt: "Model 01") %> 
+						<figcaption>
+						<div class="caption-content">
+							<a href="assets/large/01.jpg" class="single_image">
+								<i class="fa fa-search"></i><br>
+								<p>Optimised For Design</p>
+							</a>
+						</div>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
 		</div>
 	</div>
 </section>
 
+<section class="download" id="download">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center wp4">
+				<h1>Γίνε ο πρώτος που θα στείλεις notiegram</h1>
+				<a href="#plans" class="learn-btn">Στείλε notiegram <i class="fa fa-send"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- Think of a message. Complete the order form.Our model will make a photo for you.You will receive a shareable link to your tittygram. -->
-<section id="first" class="text-center">
-	<h1>Γίνε ο πρώτος που θα στείλεις Photo</h1><br>
-    <a href="#basic" class="btn btn-red">Στείλε Photo</a>
-</section>
+
 <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
 <script>  
 braintree.setup(
