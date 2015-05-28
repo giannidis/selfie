@@ -8,15 +8,30 @@
 </head>
 <body>
 
-<%= render 'layouts/nav' %>
+	 <% render 'layouts/nav' %>
 
-<header>
-	<div class="row text-center">
-		<div class="col-md-12">
-			<h2>Κάνε τα μηνύματα σου ξεχωριστά</h2>
-		</div>
-	</div>
-</header>
+	<header>
+		<section class="hero">
+			<div class="texture-overlay"></div>
+			<div class="container">
+				<div class="row nav-wrapper">
+					<div class="col-md-6 col-sm-6 col-xs-6 text-left">
+						<a href="#"><img src="assets/logo.png" alt="Boxify Logo"></a>
+					</div>
+					<!-- <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+						<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+					</div> -->
+					<!-- <a href="#basic" class="use-btn">Στείλε Photo</a> -->
+				</div>
+				<div class="row hero-content text-center">
+					<div class="col-md-12">
+						<h1 class="animated fadeInDown">Κάνε τα μηνύματα σου ξεχωριστά</h1>
+						<a href="#plans" class="use-btn animated fadeInUp">Στείλε notiegram</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
 
 <div class="container-fluid main">
 	<%= yield %>
