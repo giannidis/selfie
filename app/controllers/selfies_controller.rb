@@ -13,7 +13,7 @@ def create
 
 	if @selfie.save
 		result = Braintree::Transaction.sale(
-      :amount => "5.00",
+      :amount => "4.90",
       :payment_method_nonce => params[:payment_method_nonce]
     )
     if result.success?
