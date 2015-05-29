@@ -15,8 +15,12 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+//= require bootstrapValidator
 
 $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
+$(document).ready(function() {
+  $('#notiegram').bootstrapValidator();
+});
