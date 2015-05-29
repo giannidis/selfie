@@ -16,8 +16,8 @@
   <% end %>
   <div class="panel-body">
     <%= f.input :message, input_html: { class: 'form-control' }, maxlength: 40 %>
-    <%= f.input :email_custom, input_html: { class: 'form-control' }, required: true %>
+    <%= f.input :email_custom, as: :email,  input_html: { class: 'form-control' }, required: true %>
   </div>
   <div id="dropin"></div>
-  <%= f.button :submit, class: "btn btn-red" %>
+  <%= f.button :submit, "Στείλε το Notiegram", class: "btn btn-red" %>
 <% end %>
