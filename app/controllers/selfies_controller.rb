@@ -17,7 +17,7 @@ def create
       :payment_method_nonce => params[:payment_method_nonce]
     )
     if result.success?
-      flash[:notice] = "Payment was successful"
+      notice: "Payment was successful"
     else
       flash[:notice] = "Payment unsuccessful"
     end
